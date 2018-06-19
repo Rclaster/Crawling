@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>クローリング</title>
+</head>
+<body>
+<h2>エンジャパンクローリング</h2>
+<p>10人以上従業員を募集している会社を抽出</p>
+<form action="crawling.php" method="get">
+	<input type="checkbox" name="map[]" value="1">北海道・東北
+	<input type="checkbox" name="map[]" value="2" checked="checked">関東
+	<input type="checkbox" name="map[]" value="3">北陸・甲信越
+	<input type="checkbox" name="map[]" value="4">東海
+	<input type="checkbox" name="map[]" value="5" checked="checked">関西
+	<input type="checkbox" name="map[]" value="6">中国
+	<input type="checkbox" name="map[]" value="7">四国
+	<input type="checkbox" name="map[]" value="8">九州・沖縄
+	<input type="checkbox" name="map[]" value="9">海外
+
+	<br>
+	<br>
+   	 <input type = "submit" value = "抽出開始">
+</form>
+<br>
+<p>CSVファイル生成</p>
+<form action="Export.php" method="get">
+    <input type = "submit" value = "生成">
+</form>
+
+</body>
+</html>

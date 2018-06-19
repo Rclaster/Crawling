@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>クローリングTOP</title>
+</head>
+<body>
+<h1>クローリングTOP</h1>
+<form action="clawling.php" method="get">
+    <p>クローリング範囲</p>
+    <select name ="range">
+        <option value="majorCities">主要5都市</option>
+        <option value="kinkiKanto">近畿、関東</option>
+    </select>
+    <p>
+        <input type ="radio" name = "crawlType" value = "3" checked>1と2どちらも
+        <input type ="radio" name = "crawlType" value = "1">1のみ
+        <input type ="radio" name = "crawlType" value = "2">2のみ
+    </p>
+    <input type = "submit" value = "開始">
+</form>
+<br>
+<h2>都道府県、フェイズ毎に終了した件数を検索します。</h2>
+<form action="select.php" method="get">
+    <select name ="prefecturals">
+        <option value="hokkaido">北海道</option>
+        <option value="aomori">青森県</option>
+        <option value="akita">秋田県</option>
+        <option value="yamagata">山形県</option>
+        <option value="iwate">岩手県</option>
+        <option value="miyagi">宮城県</option>
+        <option value="fukushima">福島県</option>
+        <option value="tokyo">東京都</option>
+        <option value="kanagawa">神奈川県</option>
+        <option value="saitama">埼玉県</option>
+        <option value="chiba">千葉県</option>
+        <option value="tochigi">栃木県</option>
+        <option value="ibaraki">茨城県</option>
+        <option value="gunma">群馬県</option>
+        <option value="aichi">愛知県</option>
+        <option value="gifu">岐阜県</option>
+        <option value="shizuoka">静岡県</option>
+        <option value="mie">三重県</option>
+        <option value="niigata">新潟県</option>
+        <option value="yamanashi">山梨県</option>
+        <option value="nagano">長野県</option>
+        <option value="ishikawa">石川県</option>
+        <option value="toyama">富山県</option>
+        <option value="fukui">福井県</option>
+        <option value="osaka">大阪府</option>
+        <option value="hyogo">兵庫県</option>
+        <option value="kyoto">京都府</option>
+        <option value="shiga">滋賀県</option>
+        <option value="nara">奈良県</option>
+        <option value="wakayama">和歌山県</option>
+        <option value="okayama">岡山県</option>
+        <option value="hiroshima">広島県</option>
+        <option value="tottori">鳥取県</option>
+        <option value="shimane">島根県</option>
+        <option value="yamaguchi">山口県</option>
+        <option value="kagawa">香川県</option>
+        <option value="tokushima">徳島県</option>
+        <option value="ehime">愛媛県</option>
+        <option value="kochi">高知県</option>
+        <option value="fukuoka">福岡県</option>
+        <option value="saga">佐賀県</option>
+        <option value="nagasaki">長崎県</option>
+        <option value="kumamoto">熊本県</option>
+        <option value="oita">大分県</option>
+        <option value="miyazaki">宮崎県</option>
+        <option value="kagoshima">鹿児島県</option>
+        <option value="okinawa">沖縄県</option>
+    </select>
+    <p><input type = "radio" value = "1" id = "phase1" name = "phase" checked><LABEL for = "phase1">フェイズ1</LABEL></p>
+    <p><input type = "radio" value = "2" id = "phase2" name = "phase"><LABEL for = "phase2">フェイズ2</LABEL></p>
+    <input type = "submit" value = "検索">
+</form>
+<br>
+
+
+</body>
+</html>

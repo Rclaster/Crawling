@@ -1,0 +1,64 @@
+���z�b�g�y�b�p�[�r���[�e�B�[
+
+���S�̓I�ȕύX�_
+
+�E�s�
+
+���{�ŃN���[�����O���s�����ۂł��A�s���{���������s�ƂȂ��Ă��܂��s�
+
+�E����
+
+�t�@�C���@C:\xampp\htdocs\crawling\hotpepperbeauty\crawling.php
+
+123�s��	$this->get_letters($url, $area , '�����s');
+
+
+�E�ύX�_
+�t�@�C���@C:\xampp\htdocs\crawling\hotpepperbeauty\crawling.php
+
+91�s�ڂ���96�s�ڒǉ�
+
+	if($url == 'https://beauty.hotpepper.jp/sl_seitai/pre13/'){
+        	$prefectiralsName = '�����s';
+        }
+        else if($url == 'https://beauty.hotpepper.jp/sl_seitai/pre27/'){
+        	$prefectiralsName = '���{';
+        }
+
+123�s�ڕύX	$this->get_letters($url, $area , $prefectiralsName);
+
+	*�yR0065�z�ł͕ύX�ς�
+
+
+��x-path�̊m�F
+
+103�s�� ("//*[@id=\"mainContents\"]/div[@class=\"yS mainContentsTitleOuter mT20\"]/ul[@class=\"citiesSearch cFix\"]")
+154�s�� ("//*[@id=\"mainContents\"]/ul/li"))
+155�s�� ("//div[@id=\"mainContents\"]/ul/li")
+156�s�� ("//*[@id=\"mainContents\"]/div[2]/div[1]/div/p[2]/a[@class=\"iS arrowPagingR\"]")
+360�s�� ("//div[@id=\"contents\"]/div[@id=\"mainContents\"]/table/tr/th[contains( ./text() , \"�d�b�ԍ�\" )]/following-sibling::td/text()")
+385�s�� ("//div[@id=\"mainContents\"]/div[@class=\"mT30\"]/table/tbody/tr/th[text()=\"�d�b�ԍ�\"]/following-sibling::td")
+396�s�� ("//div[@id=\"mainContents\"]/div[@class=\"mT30\"]/table/tbody/tr/th[text()=\"�Z��\"]/following-sibling::td/text()")
+406�s�� ("//div[@id=\"mainContents\"]/div[@class=\"mT30\"]/table/tbody/tr/th[text()=\"�A�N�Z�X�E���ē�\"]/following-sibling::td/text()")
+416�s�� ("//div[@id=\"mainContents\"]/div[@class=\"mT30\"]/table/tbody/tr/th[text()=\"�c�Ǝ���\"]/following-sibling::td/text()")
+425�s�� ("//div[@id=\"mainContents\"]/div[@class=\"mT30\"]/table/tbody/tr/th[text()=\"��x��\"]/following-sibling::td/text()")
+435�s�� ("//div[@id=\"mainContents\"]/div[@class=\"mT30\"]/table/tbody/tr/th[text()=\"�N���W�b�g�J�[�h\"]/following-sibling::td/text()")
+445�s�� ("//div[@id=\"mainContents\"]/div[@class=\"mT30\"]/table/tbody/tr/th[text()=\"�ݔ�\"]/following-sibling::td/text()")
+456�s�� ("//div[@id=\"mainContents\"]/div[@class=\"mT30\"]/table/tbody/tr/th[text()=\"�X�^�b�t��\"]/following-sibling::td/text()")
+467�s�� ("//div[@id=\"mainContents\"]/div[@class=\"mT30\"]/table/tbody/tr/th[text()=\"���ԏ�\"]/following-sibling::td/text()")
+478�s�� ("//div[@id=\"mainContents\"]/div[@class=\"mT30\"]/table/tbody/tr/th[text()=\"���l\"]/following-sibling::td/text()")
+479�s�� ("//div[@id=\"mainContents\"]/div[@class=\"mT30\"]/table/tbody/tr/th[text()=\"���l\"]/following-sibling::td/p")
+
+�S�ĕύX�Ȃ�
+
+������m�F�iR0065�j
+
+���{ 1 676��
+���{ 2 675��
+
+���V�[�t���[�g(Sea Float)�yhttps://beauty.hotpepper.jp/kr/slnH000374693/?cstt...�z�̂ݎ��s�s��
+�@���y�[�W�Ƃ�X-path�̍��ق͂Ȃ�
+�@�����s��
+
+�����s 1 2199��
+�����s 2 1971/2199���@�i2018/05/16���݁j

@@ -1,0 +1,29 @@
+■食べログ
+
+○x-pathの確認
+
+・1で使用するx-path
+
+109行目 ("//div[contains(@class,'area')]");
+245行目 ("//div[contains(@class,'taglist')]")
+265行目 ("//div[contains(@class,'rstname')]")
+266行目 ("//div[contains(@class,'rstname')]")
+267行目 ("//descendant::a[attribute::rel='next']")
+
+・2で使用するx-path
+378行目 ("//*[text()='店名']/following-sibling::td")
+390行目 ("//*[@id=\"contents-rstdata\"]/div[2]/table[1]/tbody/tr[2]/td/span")
+403行目 ("//*[@id=\"contents-rstdata\"]/div[2]/table[1]/tbody/tr[3]/td/p/strong")
+439行目 ("//*[text()='住所']/following-sibling::td/p")
+449行目 ("//*[text()='営業時間']/following-sibling::td/p")
+473行目 ("//*[text()='席数']/following-sibling::td/p")
+483行目 ("//*[@class='homepage']/a")
+501行目 ("//*[@class='owner-badge']")
+
+変更なし
+
+507行目 ("//*[@id='contents-mainphotos']")
+512行目 ("//a[text()='予約する']")
+
+該当項目なし
+公式情報が非公開になった可能性あり
