@@ -1,21 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: STRATEGIC-BRANCH-03
- * Date: 2017/07/05
- * Time: 16:50
- */
 $csv = new CSV();
 
 $csv->create_csv();
 
 
 class CSV{
-    private $server = "127.0.0.1";
-    private $username = "root";
+    private $server = "";
+    private $username = "";
     private $password = "";
-    private $database = "crawling";
-    //private $csv_file_path = "C:\\xampp\csv\\hotpepper.csv"; //csvファイルのパス
+    private $database = "";
+    //private $csv_file_path = ""; //csvファイルのパス
     private $csv_file_path = "hotpepper.csv";
     private $export_csv_title = array( "都道府県", "地区", "住所", "店名", "電話番号", "URL","アクセス", "営業時間", "定休日", "クレジットカード", "設備", "スタッフ数", "駐車場", "備考");
     private $dbconnect ;
