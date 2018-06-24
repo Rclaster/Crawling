@@ -6,12 +6,6 @@
 </head>
 <body>
 <?php
-/**
- * Created by PhpStorm.
- * User: STRATEGIC-BRANCH-03
- * Date: 2017/06/20
- * Time: 11:56
- */
 $range = $_GET['range'];
 if($range == "tokyo"){
     $prefecturals = ["pre13"];
@@ -48,12 +42,12 @@ else if ($crawlType == 3) {
 }
 class Crawler
 {
-    private $server = "127.0.0.1";
-    private $username = "root";
+    private $server = "";
+    private $username = "";
     private $password = "";
-    private $database = "work";
-    private $logs_path = "/Users/hiroki/PhpstormProjects/php_workspace/work/hotpepper/logs/hotpepper_failed_log";    // エラーログファイルのパス
-    private $crawling_logs = "/Users/hiroki/PhpstormProjects/php_workspace/work/hotpepper/logs/hotpepper_crawling_logs";
+    private $database = "";
+    private $logs_path = "";    // エラーログファイルのパス
+    private $crawling_logs = "";
     private $failed_num = 0;                                // 取得に連続で失敗した回数
     private $sleep_time = 3;                                // 再リクエストまでの間隔（秒）
 
