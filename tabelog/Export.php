@@ -1,21 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: STRATEGIC-BRANCH-03
- * Date: 2017/07/05
- * Time: 16:50
- */
+
 $csv = new CSV();
 
 $csv->create_csv();
 
 
 class CSV{
-    private $server = "127.0.0.1";
-    private $username = "root";
+    private $server = "";
+    private $username = "";
     private $password = "";
-    private $database = "crawling";
-    //private $csv_file_path = "C:\\xampp\csv\\hotpepper.csv"; //csvファイルのパス
+    private $database = "";
+    //private $csv_file_path = ""; //csvファイルのパス
     private $csv_file_path = "tabelog.csv";
     private $export_csv_title = array( "都道府県", "地名", "頭文字", "食べログURL", "店名", "ジャンル","電話番号", "住所", "営業時間", "席数", "店舗ページURL", "アクセス数(先週)", "アクセス数(先々週)","アクセス数(累計)", "店舗会員情報");
     private $dbconnect ;
