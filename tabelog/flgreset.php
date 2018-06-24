@@ -3,10 +3,10 @@ $crawler = new Crawler();
 
 class Crawler
 {
-    private $server = "127.0.0.1";
-    private $username = "root";
-    private $password = "asdf";
-    private $database = "crawling";
+    private $server = "";
+    private $username = "";
+    private $password = "";
+    private $database = "";
 
     // コンストラクタ関数
     function __construct()
