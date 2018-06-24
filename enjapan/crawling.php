@@ -23,12 +23,12 @@ $crawler->crawling_method("https://employment.en-japan.com/wish/search_list/?top
 
 class Crawler
 {
-    private $server = "127.0.0.1";
-    private $username = "root";
+    private $server = "";
+    private $username = "";
     private $password = "";
-    private $database = "work";
-    private $logs_path = "/Users/hiroki/PhpstormProjects/php_workspace/work/enjapan/logs/enjapan_failed_log";    // エラーログファイルのパス
-    private $crawling_logs = "/Users/hiroki/PhpstormProjects/php_workspace/work/enjapan/logs/enjapan_crawling_logs";
+    private $database = "";
+    private $logs_path = "";    // エラーログファイルのパス
+    private $crawling_logs = "";
     private $failed_num = 0;                                // 取得に連続で失敗した回数
     private $sleep_time = 3;                                // 再リクエストまでの間隔（秒）
 
