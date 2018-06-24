@@ -29,14 +29,6 @@ else{
 // クローラーインスタンスの生成
 $crawler = new Crawler();
 
-/* クローリングを開始（第一フェーズ：ルートのURLを渡す）
- *                    (第二フェーズ: 都道府県を渡す)
- *
- * 追加日:2017/05/29
- *
- * @author s.fujimura
- */
-
 if($range == "majorCities" || $range == "kinkiKanto") {
     for ($i = 0; $i < count($prefectural); $i++) {
         if($crawlType == 1){
@@ -69,12 +61,12 @@ else{
 
 
 class Crawler {
-    private $server     = "127.0.0.1";
-    private $username   = "root";
+    private $server     = "";
+    private $username   = "";
     private $password   = "";
-    private $database   = "crawling";
-    private $logs_path  = "C:\\xampp\php\logs\\failed_log";	// エラーログファイルのパス
-    private $crawling_logs = "C:\\xampp\htdocs\crawling\logs\\tabelog.log.txt";
+    private $database   = "";
+    private $logs_path  = "";	// エラーログファイルのパス
+    private $crawling_logs = "";
     private $failed_num = 0;								// 取得に連続で失敗した回数
     private $sleep_time = 10;								// 再リクエストまでの間隔（秒）
     private $sleep_program = 600;                       //再起をかけるためのタイマー
@@ -142,15 +134,7 @@ class Crawler {
     }
 
 
-    /**
-     * SQL文を発行するメソッド
-     * 引数はSQL文
-     * 戻り値は実行結果(array)
-     *
-     * @param String $sql　SQL文
-     * @return array
-     * @author s.fujimura
-     */
+    
     private function get_data($sql) {
         $result = mysql_query($sql);
         if (!$result) die('クエリーが失敗しました。'.mysql_error());
