@@ -10,11 +10,11 @@ $csv->create_csv();
 
 
 class CSV{
-    private $server = "127.0.0.1";
-    private $username = "root";
+    private $server = "";
+    private $username = "";
     private $password = "";
-    private $database = "work";
-    //private $csv_file_path = "C:\\xampp\csv\\hotpepper.csv"; //csvファイルのパス
+    private $database = "";
+    //private $csv_file_path = ""; //csvファイルのパス
     private $csv_file_path = "enjapan.csv";
     private $export_csv_title = array( "URL", "屋号", "住所", "TEL");
     private $dbconnect ;
