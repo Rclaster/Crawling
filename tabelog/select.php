@@ -10,10 +10,10 @@ $crawler->select($phase,$prefecturals);
 
 class Crawler
 {
-    private $server = "127.0.0.1";
-    private $username = "root";
+    private $server = "";
+    private $username = "";
     private $password = "";
-    private $database = "crawling";
+    private $database = "";
 
 
 
